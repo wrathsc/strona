@@ -589,7 +589,7 @@ main {
 
   /* GRID POSTACI – telefony */
   .people-grid {
-    grid-template-columns:repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns:1fr;
     gap: 12px;
     padding: 0 8px;
   }
