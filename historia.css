@@ -60,6 +60,7 @@ body.historia-page {
 .historia-page .tekst-historia p {
     margin-bottom: 16px;
     text-align: justify;
+    text-indent: 1.5em;
 }
 
 .historia-page .tekst-historia i {
@@ -288,3 +289,4 @@ h2 {
         display: block;
     }
 }
+
