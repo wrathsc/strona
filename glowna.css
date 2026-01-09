@@ -586,6 +586,11 @@ main {
 }
 
 @media (max-width: 600px) {
+   .dict-popup {
+    top: 80px; /* zamiast 50% na telefonach */
+    transform: translate(-50%, 0); /* przesunięcie tylko w poziomie */
+    max-width: 90%; /* dopasowanie szerokości */
+  }
 
   /* GRID POSTACI – telefony */
    .people-grid {
@@ -609,7 +614,7 @@ main {
   .person-card h3 {
     font-size: 1rem;
   }
-}
+
 
 
 
