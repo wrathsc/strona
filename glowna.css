@@ -583,14 +583,21 @@ main {
   .person-card h3 {
     font-size: 0.95rem;
   }
+  .dict-popup {
+    max-width: 60%;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
    .dict-popup {
-    top: 80px; /* zamiast 50% na telefonach */
-    transform: translate(-50%, 0); /* przesunięcie tylko w poziomie */
-    max-width: 90%; /* dopasowanie szerokości */
+    top: 80px; /* przesunięcie poniżej nav */
+    transform: translate(-50%, 0); /* tylko centrowanie poziome */
+    max-width: 90%;
+    padding: 14px 16px;
+    font-size: 0.95rem;
   }
+}
 
   /* GRID POSTACI – telefony */
    .people-grid {
@@ -599,6 +606,13 @@ main {
     gap: 12px;
     width: 100%;
     padding: 0 12px;
+  }
+}
+@media (max-width: 400px) {
+  .dict-popup {
+    top: 70px;
+    padding: 12px 14px;
+    font-size: 0.9rem;
   }
 }
 
