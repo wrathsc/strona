@@ -45,6 +45,9 @@ body.historia-page {
     text-align: justify;
     text-justify: inter-word;
     word-spacing: 0.1em;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
     line-height: 1.6;
     padding: 0 20px;
     color: #e6edf3;
@@ -116,6 +119,8 @@ body.historia-page {
    .historia-page .tekst-historia {
         word-spacing: 0.05em;
         line-height: 1.5;
+        text-align: left;
+        max-width: 68ch;
     }
 
     .tekst-historia {
@@ -298,6 +303,7 @@ h2 {
         display: block;
     }
 }
+
 
 
 
