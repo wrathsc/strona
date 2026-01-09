@@ -498,41 +498,16 @@ main {
   background: rgba(0, 204, 255, 0.15);
 }
 
+/* ==================== RESPONSYWNOŚĆ ==================== */
 @media (max-width: 1000px) {
+  #bg-electrons { height: auto; }
 
-  #bg-electrons {
-    height: auto;
-  }
-  /* =========================
-     GÓRNY NAV – MOBILNY
-  ========================= */
-  .nav > *:not(.hamburger) {
-    display: none;
-    pointer-events: auto;
-  }
+  /* NAV – mobilny */
+  .nav > *:not(.hamburger) { display: none; pointer-events: auto; }
+  .hamburger { display: block; position: fixed; top: 18px; right: 18px; z-index: 10000; cursor: pointer; }
+  .hamburger div { width: 28px; height: 3px; background: #00cfff; margin: 6px 0; border-radius: 2px; transition: all 0.3s ease; }
 
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 18px;
-    right: 18px;
-    z-index: 10000;
-    cursor: pointer;
-    pointer-events: auto;
-  }
-
-  .hamburger div {
-    width: 28px;
-    height: 3px;
-    background: #00cfff;
-    margin: 6px 0;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-
-  /* =========================
-     MENU Z GÓRNEGO NAV
-  ========================= */
+  /* MENU NAV mobilne */
   .nav-menu {
     position: fixed;
     top: 64px;
@@ -542,198 +517,56 @@ main {
     border-radius: 14px;
     padding: 12px;
     z-index: 9999;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
+  .nav-menu.open { opacity: 1; visibility: visible; pointer-events: auto; }
+  .nav-menu a { display: block; padding: 10px 14px; color: #c2e9ff; text-decoration: none; border-radius: 10px; font-size: 15px; }
+  .nav-menu a:hover { background: rgba(0,204,255,0.15); }
 
-  .nav-menu.open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .nav-menu a {
-    display: block;
-    padding: 10px 14px;
-    color: #c2e9ff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-
-  .nav-menu a:hover {
-    background: rgba(0,204,255,0.15);
-  }
-
-  /* =========================
-     SIDEBAR – TEORIA (MOBILNY)
-  ========================= */
+  /* SIDEBAR TEORIA mobilny */
   .teoria-sidebar {
-  position: fixed;
-  top: 0;
-  left: -260px;
-  width: 250px;
-  height: 100dvh;
-  padding: 64px 16px 12px;
-  background: rgba(0,0,0,0.95);
-  backdrop-filter: blur(6px);
-  z-index: 9999;
-  overflow-y: auto;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition:
-  left 0.3s ease,
-  opacity 0.2s ease,
-  visibility 0.2s ease;
+    position: fixed; top: 0; left: -260px; width: 250px; height: 100dvh;
+    padding: 64px 16px 12px; background: rgba(0,0,0,0.95); backdrop-filter: blur(6px);
+    z-index: 9999; overflow-y: auto; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: left 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
   }
+  .teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
 
-  .teoria-sidebar.open {
-    left: 0;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+  /* HAMBURGER SIDEBAR TEORIA */
+  .sidebar-hamburger-teoria { display: block; top: 18px; left: 18px; z-index: 100001; cursor: pointer; }
+  .sidebar-hamburger-teoria div { width: 28px; height: 3px; background: #00cfff; margin: 6px 0; border-radius: 2px; }
 
-  /* =========================
-     HAMBURGER DO SIDEBARU TEORII
-  ========================= */
-  .sidebar-hamburger-teoria {
-    display: block;
-    position: fixed;
-    top: 18px;
-    left: 18px;
-    z-index: 100001;
-    cursor: pointer;
-  }
+  /* LINKI w SIDEBARZE TEORII */
+  #teoria-nav a { display: block; margin-bottom: 10px; padding: 10px 14px; font-size: 15px; }
 
-  .sidebar-hamburger-teoria div {
-    width: 28px;
-    height: 3px;
-    background: #00cfff;
-    margin: 6px 0;
-    border-radius: 2px;
-  }
+  /* LAYOUT strony mobilny */
+  .teoria-layout { display: block; margin: 0; padding-top: 0 !important; }
+  #teoria-container { margin: 0; padding: 12px 0 0; }
+  .teoria-block:first-child { margin-top: 0 !important; }
 
-  /* =========================
-     LINKI W SIDEBARZE TEORII
-  ========================= */
-  #teoria-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px 14px;
-    color: #c2e9ff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 15px;
-  }
+  /* TIMELINE mobilnie */
+  #timeline { display: grid; grid-template-columns: repeat(2, 1fr); position: relative; margin: 0 auto; }
+  #timeline::before { left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: rgba(200,240,255,0.2); }
+  .event { width: 90%; margin: 40px auto; padding: 20px; border-radius: 8px; }
+  .event:nth-child(odd) { grid-column: 1; justify-self: end; }
+  .event:nth-child(odd)::before { right: -7px; }
+  .event:nth-child(even) { grid-column: 2; justify-self: start; }
+  .event:nth-child(even)::before { left: -7px; }
 
-  #teoria-nav a:hover {
-    background: rgba(0,204,255,0.15);
-  }
-
-  /* =========================
-     LAYOUT STRONY – MOBILNY
-  ========================= */
-  .teoria-layout {
-    display: block;
-    margin: 0;
-    padding-top: 0 !important;
-  }
-
-  #teoria-container {
-  margin: 0;
-  padding: 12px 0 0;
-  }
-
-  .teoria-block:first-child {
-    margin-top: 0 !important;
-  }
-
-  /* =========================
-     TIMELINE – mobilnie
-  ========================= */
-  #timeline {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: relative;
-    margin: 0 auto;
-  }
-
-  #timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background: rgba(200, 240, 255, 0.2);
-    z-index: 1;
-  }
-
-  .event {
-    position: relative;
-    width: 90%;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(0, 20, 40, 0.6);
-    border-radius: 8px;
-    color: #fff;
-    z-index: 2;
-  }
-
-  .event::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 14px;
-    height: 14px;
-    background: #00cfff;
-    border-radius: 50%;
-    z-index: 3;
-  }
-
-  .event:nth-child(odd) {
-    grid-column: 1;
-    justify-self: end;
-  }
-  .event:nth-child(odd)::before {
-    right: -7px;
-  }
-
-  .event:nth-child(even) {
-    grid-column: 2;
-    justify-self: start;
-  }
-  .event:nth-child(even)::before {
-    left: -7px;
-  }
-
-  .event .date {
-    font-weight: bold;
-    color: #00cfff;
-    margin-bottom: 6px;
-    display: block;
-  }
-
-  /* =========================
-     DODATKOWE ELEMENTY MOBILNE
-  ========================= */
-  #teoria-container {
-    padding-top: 64px; 
-  }
-
-  .postacie-page .dict-popup {
-    width: 92%;
-    font-size: 1rem;
-  }
-
+  #teoria-container { padding-top: 64px; }
+  .postacie-page .dict-popup { width: 92%; font-size: 1rem; }
 }
+
+@media (max-width: 480px) {
+  .dict-popup { width: 95%; font-size: 0.95rem; padding: 10px 12px; }
+  .dict-popup img { max-height: 50vh; }
+  .dict-popup strong { font-size: 1.3rem; }
+  #teoria-container { padding-top: 64px; }
+}
+
 
 
 
