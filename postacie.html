@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Historia elektrotechniki</title>
+  <link rel="stylesheet" href="glowna.css">
+</head>
+<body class="postacie-page">
+
+<canvas id="bg-electrons"></canvas>
+
+
+<header class="nav">
+  <div id="readingProgressContainer">
+  <div id="readingProgress"></div>
+</div>
+
+    <div class="start"><h4>Menu</h4></div>
+
+    <nav class="menu" aria-label="Główne menu">
+      <a href="os_czasu.html">Oś czasu</a>
+      <a href="historia.html" aria-current="page">Historia</a>
+      <a href="postacie.html">Postacie</a>
+      <a href="teoria_multimedia.html">Teoria i multimedia</a>
+    </nav>
+
+    <input type="checkbox" id="navToggle" class="nav-toggle" />
+    <label for="navToggle" class="hamburger" aria-label="Otwórz menu">
+      <div></div><div></div><div></div>
+    </label>
+
+    <nav class="tel">
+      <a href="os_czasu.html">Oś czasu</a>
+      <a href="historia.html" aria-current="page">Historia</a>
+      <a href="postacie.html">Postacie</a>
+      <a href="teoria_multimedia.html">Teoria i multimedia</a>
+    </nav>
+  </header>
+
+<main>
+  <section class="tlo">
+    <div class="people-grid">
+      <div class="person-card dict-word" data-key="gilbert">
+        <img src="img/wililiam_gilbert.jpg" alt="William Gilbert">
+        <h3>William Gilbert (1544-1603)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="cabeo">
+        <img src="img/niccolo_cabeo.jpg" alt="Niccolò Cabeo">
+        <h3>Niccolò Cabeo (1586-1650)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="kircher">
+        <img src="img/Athanasius_Kircher.jpg" alt="Athanasius Kircher">
+        <h3>Athanasius Kircher (1602-1680)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="guericke">
+        <img src="img/Otto_von_Guericke.jpg" alt="Otto von Guericke">
+        <h3>Otto von Guericke (1602-1686)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="boyle">
+        <img src="img/robert_boyle.jpg" alt="Robert Boyle">
+        <h3>Robert Boyle (1627-1691)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="gray">
+        <img src="img/stephen_gray.jpg" alt="Stephen Gray">
+        <h3>Stephen Gray (1666-1736)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="hauksbee">
+        <img src="img/francis_hauksbee.jpg" alt="Francis Hauksbee">
+        <h3>Francis Hauksbee (1666-1713)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="musschenbroek">
+        <img src="img/pieter_van_musschenbroek.jpg" alt="Pieter van Musschenbroek">
+        <h3>Pieter van Musschenbroek (1692-1761)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="fay">
+        <img src="img/Charles_du_Fay.jpg" alt="Charles-François de Cisternay du Fay">
+        <h3>Charles-François de Cisternay du Fay (1698-1739)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="kleist">
+        <img src="img/ewald_von_kleist.png" alt="Ewald Jürgen Georg von Kleist">
+        <h3>Ewald Jürgen Georg von Kleist (1700-1748)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="franklin">
+        <img src="img/benjamin_franklin.jpg" alt="Benjamin Franklin">
+        <h3>Benjamin Franklin (1706-1790)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="michell">
+        <img src="img/john_michell.jpg" alt="John Michell">
+        <h3>John Michell (1724-1793)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="cavendish">
+        <img src="img/Henry_Cavendish.jpg" alt="Henry Cavendish">
+        <h3>Henry Cavendish (1731-1810)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="wilcke">
+        <img src="img/Johan_Wilcke.jpg" alt="Johan Carl Wilcke">
+        <h3>Johan Carl Wilcke (1732-1796)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="priestley">
+        <img src="img/joseph_Priestley.jpg" alt="Joseph Priestley">
+        <h3>Joseph Priestley (1733-1804)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="ramsden">
+        <img src="img/Jesse_Ramsden.jpg" alt="Jesse Ramsden">
+        <h3>Jesse Ramsden (1735-1800)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="coulomb">
+        <img src="img/charles_de_coulomb.png" alt="Charles Augustin Coulomb">
+        <h3>Charles Augustin Coulomb (1736-1806)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="galvani">
+        <img src="img/Luigi_Galvani.jpg" alt="Luigi Galvani">
+        <h3>Luigi Galvani (1737-1798)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="robison">
+        <img src="img/john_robison.png" alt="John Robison">
+        <h3>John Robison (1739-1805)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="volta">
+        <img src="img/alessandro_volta.jpg" alt="Alessandro Giuseppe Antonio Volta">
+        <h3>Alessandro Giuseppe Antonio Volta (1745-1827)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="cavallo">
+        <img src="img/Tiberius_Cavallo.jpg" alt="Tiberio Cavallo">
+        <h3>Tiberio Cavallo (1749-1809)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="bennet">
+        <img src="img/Abraham_Bennet.JPG" alt="Abraham Bennet">
+        <h3>Abraham Bennet (1749-1799)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="romagnosi">
+        <img src="img/Gian_Romagnosi.jpg" alt="Gian Domenico Romagnosi">
+        <h3>Gian Domenico Romagnosi (1761-1835)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="seebeck">
+        <img src="img/Thomas_Seebeck.jpg" alt="Thomas Johann Seebeck">
+        <h3>Thomas Johann Seebeck (1770-1831)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="biot">
+        <img src="img/jean_biot.jpg" alt="Jean-Baptiste Biot">
+        <h3>Jean-Baptiste Biot (1774-1862)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="amper">
+        <img src="img/Andre_Ampere.jpg" alt="André Marie Ampère">
+        <h3>André Marie Ampère (1775-1836)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="ritter">
+        <img src="img/Johann_Ritter.jpg" alt="Johann Wilhelm Ritter">
+        <h3>Johann Wilhelm Ritter (1776-1810)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="Ørsted">
+        <img src="img/Hans_Ørsted.jpg" alt="Hans Christian Ørsted">
+        <h3>Hans Christian Ørsted (1777-1851)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="gauss">
+        <img src="img/carl_gauss.jpg" alt="Carl Friedrich Gauss">
+        <h3>Carl Friedrich Gauss (1777-1855)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="schweigger">
+        <img src="img/Johann_Schweigger.png" alt="Johann Salomo Christoph Schweigger">
+        <h3>Johann Salomo Christoph Schweigger (1779-1857)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="poisson">
+        <img src="img/simeon_poisson.jpg" alt="Siméon Denis Poisson">
+        <h3>Siméon Denis Poisson (1781-1840)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="ohm">
+        <img src="img/Georg_Ohm.jpg" alt="Georg Simon Ohm">
+        <h3>Georg Simon Ohm (1787-1854)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="savart">
+        <img src="img/felix_savart.jpg" alt="Félix Savart">
+        <h3>Félix Savart (1791-1841)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="faraday">
+        <img src="img/Michael_Faraday.png" alt="Michael Faraday">
+        <h3>Michael Faraday (1791-1867)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="morse">
+        <img src="img/samuel_morse.jpg" alt="Samuel Finley Breese Morse">
+        <h3>Samuel Finley Breese Morse (1791-1872)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="green">
+        <img src="img/george_green.jpg" alt="George Green">
+        <h3>George Green (1793-1841)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="henry">
+        <img src="img/joseph_henry.jpg" alt="Joseph Henry">
+        <h3>Joseph Henry (1797-1878)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="neumann">
+        <img src="img/Franz_Neumann.jpg" alt="Franz Ernst Neumann">
+        <h3>Franz Ernst Neumann (1798-1895)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="fechner">
+        <img src="img/Gustav_Fechner.jpg" alt="Gustav Theodor Fechner">
+        <h3>Gustav Theodor Fechner (1801-1887)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="wheatstone">
+        <img src="img/Wheatstone_Charles.jpg" alt="Charles Wheatstone">
+        <h3>Charles Wheatstone (1802-1875)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="lenz">
+        <img src="img/heinrich_lenz.jpg" alt="Heinrich Friedrich Emil Lenz">
+        <h3>Heinrich Friedrich Emil Lenz (1804-1865)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="weber">
+        <img src="img/Wilhelm_Weber.jpg" alt="Wilhelm Eduard Weber">
+        <h3>Wilhelm Eduard Weber (1804-1891)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="siemens">
+        <img src="img/werner_siemens.jpg" alt="Ernst Werner von Siemens">
+        <h3>Ernst Werner von Siemens (1816-1892)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="joule">
+        <img src="img/Joule_James.jpg" alt="James Prescott Joule">
+        <h3>James Prescott Joule (1818-1889)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="fizeau">
+        <img src="img/Hippolyte_Fizeau.jpg" alt="Hippolyte Louis Fizeau">
+        <h3>Hippolyte Louis Fizeau (1819-1896)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="helmholtz">
+        <img src="img/Hermann_von_Helmholtz.jpg" alt="Hermann von Helmholtz">
+        <h3>Hermann von Helmholtz (1821-1894)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="kirchhof">
+        <img src="img/Gustav_Kirchhoff.jpg" alt="Gustav Robert Kirchhoff">
+        <h3>Gustav Robert Kirchhoff (1824-1887)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="thomson">
+        <img src="img/lord_Kelvin.jpg" alt="William Thomson (lord Kelvin)">
+        <h3>William Thomson (lord Kelvin) (1824-1907)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="stoney">
+        <img src="img/johnstone_stoney.jpg" alt="George Johnstone Stoney">
+        <h3>George Johnstone Stoney (1826-1911)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="waltenhofen">
+        <img src="img/Adalbert_von_Waltenhofen.jpg" alt="Adalbert von Waltenhofen">
+        <h3>Adalbert von Waltenhofen (1828-1914)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="maxwell">
+        <img src="img/James_Maxwell.jpg" alt="James Clerk Maxwell">
+        <h3>James Clerk Maxwell (1831-1879)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="wimshurst">
+        <img src="img/james_wimshurst.jpg" alt="James Wimshurst">
+        <h3>James Wimshurst (1832-1903)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="edison">
+        <img src="img/Thomas_Edison.jpg" alt="Thomas Alva Edison">
+        <h3>Thomas Alva Edison (1847-1931)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="jabłoczkow">
+        <img src="img/pawieł_jabłoczkow.jpg" alt="Pawieł Nikołajewicz Jabłoczkow">
+        <h3>Pawieł Nikołajewicz Jabłoczkow (1847-1894)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="fleming">
+        <img src="img/John_Fleming.png" alt="John Ambrose Fleming">
+        <h3>John Ambrose Fleming (1849-1945)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="heaviside">
+        <img src="img/Oliver_Heaviside.jpg" alt="Oliver Heaviside">
+        <h3>Oliver Heaviside (1850-1925)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="onnes">
+        <img src="img/Kamerlingh.jpg" alt="Heike Kamerlingh Onnes">
+        <h3>Heike Kamerlingh Onnes (1853-1926)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="ewing">
+        <img src="img/alfred_Ewing.jpg" alt="James Alfred Ewing">
+        <h3>James Alfred Ewing (1855-1935)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="hall">
+        <img src="img/Edwin_Hall.png" alt="Edwin Herbert Hall">
+        <h3>Edwin Herbert Hall (1855-1938)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="joseph_thomson">
+        <img src="img/joseph_thomson.jpg" alt="Joseph John Thomson">
+        <h3>Joseph John Thomson (1856-1940)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="tesla">
+        <img src="img/Tesla.png" alt="Nikola Tesla">
+        <h3>Nikola Tesla (1856-1943)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="hertz">
+        <img src="img/Heinrich_Hertz.jpg" alt="Heinrich Rudolf Hertz">
+        <h3>Heinrich Rudolf Hertz (1857-1894)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="curie">
+        <img src="img/Pierre_Curie.jpg" alt="Pierre Curie">
+        <h3>Pierre Curie (1859-1906)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="popov">
+        <img src="img/Alexander_Stepanovich_Popov.jpg" alt="Alexander Stepanovich Popov">
+        <h3>Alexander Stepanovich Popov (1859-1906)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="kennelly">
+        <img src="img/Arthur_Kennelly.png" alt="Arthur Edwin Kennelly">
+        <h3>Arthur Edwin Kennelly (1861-1939)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="doliwo">
+        <img src="img/Doliwo-Dobrowolsky.jpg" alt="Michał Doliwo-Dobrowolski">
+        <h3>Michał Doliwo-Dobrowolski (1862-1919)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="nernst">
+        <img src="img/Walther_Nernst.jpg" alt="Walter Hermann Nernst">
+        <h3>Walter Hermann Nernst (1864-1941)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="steinmetz">
+        <img src="img/charles_steinmetz.jpg" alt="Charles Proteus Steinmetz">
+        <h3>Charles Proteus Steinmetz (1865-1923)</h3>
+      </div>
+       <div class="person-card dict-word" data-key="fessenden">
+        <img src="img/Fessenden.JPG" alt="Reginald Aubrey Fessenden">
+        <h3>Reginald Aubrey Fessenden (1866-1932)</h3>
+      </div>
+       <div class="person-card dict-word" data-key="arco">
+        <img src="img/Georg_Graf_von_Arco.jpg" alt="Georg Wilhelm Alexander Graf von Arco">
+        <h3>Georg Wilhelm Alexander Graf von Arco (1869-1940)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="forest">
+        <img src="img/Lee_De_Forest.jpg" alt="Lee de Forest">
+        <h3>Lee de Forest (1873-1961)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="marconi">
+        <img src="img/guglielmo_marconi.jpg" alt="Guglielmo Marconi">
+        <h3>Guglielmo Marconi(1874-1937)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="alexanderson">
+        <img src="img/Ernst_Alexanderson.jpg" alt="Ernst Fredrik Werner Alexanderson">
+        <h3>Ernst Fredrik Werner Alexanderson (1878-1975)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="meissner">
+        <img src="img/Walther_Meissner.jpg" alt="Walther Meissner">
+        <h3>Walther Meissner (1882-1974)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="fryze">
+        <img src="img/Stanisław_Fryze.jpg" alt="Stanisław Fryze">
+        <h3>Stanisław Fryze (1885-1964)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="graaff">
+        <img src="img/Robert_de_Graaff.png" alt="Robert Jemison Van de Graaff">
+        <h3>Robert Jemison Van de Graaff (1901-1967)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="ochsenfeld">
+        <img src="img/robert_ochsenfeld.jpg" alt="Robert Ochsenfeld">
+        <h3>Robert Ochsenfeld (1901-1993)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="biegelmeier">
+        <img src="img/gottfried_biegelmeier.jpg" alt="Gottfried Biegelmeier">
+        <h3>Gottfried Biegelmeier (1924-2007)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="muller">
+        <img src="img/karl_muller.jpg" alt="Karl Alexander Müller (1927-2023)">
+        <h3>Karl Alexander Müller (1927-2023)</h3>
+      </div>
+      <div class="person-card dict-word" data-key="bednorz">
+        <img src="img/Johannes_Bednorz.jpg" alt="Johannes Georg Bednorz">
+        <h3>Johannes Georg Bednorz (1950)</h3>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

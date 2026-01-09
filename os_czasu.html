@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia elektrotechniki</title>
+  <link rel="stylesheet" href="glowna.css" />
+</head>
+<body>
+
+<div id="readingProgressContainer">
+  <div id="readingProgress"></div>
+</div>
+
+  <canvas id="bg-electrons"></canvas>
+
+  <header class="nav">
+    <div class="start"><h4>Menu</h4></div>
+
+    <nav class="menu" aria-label="Główne menu">
+      <a href="os_czasu.html">Oś czasu</a>
+      <a href="historia.html">Historia</a>
+      <a href="postacie.html">Postacie</a>
+      <a href="teoria_multimedia.html">Teoria i multimedia</a>
+    </nav>
+
+    <input type="checkbox" id="navToggle" class="nav-toggle" />
+    <label for="navToggle" class="hamburger" aria-label="Otwórz menu">
+      <div></div><div></div><div></div>
+    </label>
+
+    <nav class="tel" aria-hidden="true">
+      <a href="os_czasu.html">Oś czasu</a>
+      <a href="historia.html" aria-current="page">Historia</a>
+      <a href="postacie.html">Postacie</a>
+      <a href="teoria_multimedia.html">Teoria i multimedia</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="tlo" id="home" aria-label="Tło strony — skalowalne">
+      <div class="overlay">
+        <h1>Historia elektroniki</h1>
+        <div id="timeline"></div> 
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
