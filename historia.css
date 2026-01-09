@@ -69,6 +69,14 @@ body.historia-page {
     text-align: justify;
     text-indent: 1.5em;
     max-width: 65ch;
+    text-align: justify;
+    text-justify: inter-word;
+
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+
+    line-height: 1.6;
 }
 
 .historia-page .tekst-historia i {
@@ -121,6 +129,11 @@ body.historia-page {
         line-height: 1.5;
         text-align: left;
         max-width: 68ch;
+    }
+   .historia-page .tekst-historia p {
+        text-align: left;
+        word-spacing: 0.04em;
+        line-height: 1.5;
     }
 
     .tekst-historia {
@@ -303,6 +316,7 @@ h2 {
         display: block;
     }
 }
+
 
 
 
