@@ -548,14 +548,10 @@ main {
   .teoria-block:first-child { margin-top: 0 !important; }
 
   /* TIMELINE mobilnie */
-  #timeline { display: grid; grid-template-columns: repeat(2, 1fr); position: relative; margin: 0 auto; }
-  #timeline::before { left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: rgba(200,240,255,0.2); }
+  #timeline { display: grid; grid-template-columns: 1fr; position: relative; margin: 0 auto; }
+  #timeline::before { content: ''; position: absolute; top: 0; left: 20px; width: 4px; height: 100%; background: rgba(200,240,255,0.2); z-index: 1; }
   .event { width: 90%; margin: 40px auto; padding: 20px; border-radius: 8px; }
-  .event:nth-child(odd) { grid-column: 1; justify-self: end; }
-  .event:nth-child(odd)::before { right: -7px; }
-  .event:nth-child(even) { grid-column: 2; justify-self: start; }
-  .event:nth-child(even)::before { left: -7px; }
-
+  .event::before { content: ''; position: absolute; top: 20px; left: -10px; width: 14px; height: 14px; background: #00cfff; border-radius: 50%;z-index: 3; }
   #teoria-container { padding-top: 64px; }
   .postacie-page .dict-popup { width: 92%; font-size: 1rem; }
 }
