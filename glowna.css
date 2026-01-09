@@ -569,7 +569,7 @@ main {
 
   /* GRID POSTACI – tablet/mid screens */
   .people-grid {
-    grid-template-columns: 3fr;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     justify-items: center;
     width: 100%;
@@ -589,7 +589,7 @@ main {
 
   /* GRID POSTACI – telefony */
   .people-grid {
-    grid-template-columns: 1fr; /* jeden element na wiersz */
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
     padding: 0 8px;
   }
