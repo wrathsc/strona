@@ -40,21 +40,19 @@ body.historia-page {
    ============================== */
 
 .historia-page .tekst-historia {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: justify;
-    text-justify: inter-word;
-    word-spacing: 0.1em;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #e6edf3;
+
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: normal;
-    line-height: 1.6;
-    padding: 0 20px;
-    color: #e6edf3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.05rem;
-    line-height: 1.7;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
+
 
 .historia-page .tekst-historia h2 {
     color: #00cfff;
@@ -65,19 +63,14 @@ body.historia-page {
 }
 
 .historia-page .tekst-historia p {
-    margin-bottom: 16px;
-    text-align: justify;
-    text-indent: 1.5em;
-    max-width: 65ch;
-    text-align: justify;
-    text-justify: inter-word;
+    max-width: auto;
+    margin: 0 0 1.2em 0;
+    text-indent: 1.6em;
 
-    hyphens: auto;
-    overflow-wrap: break-word;
-    word-break: normal;
-
-    line-height: 1.6;
+    text-align: justify;
+    text-justify: auto;
 }
+
 
 .historia-page .tekst-historia i {
     color: #dddddd;
@@ -96,23 +89,24 @@ body.historia-page {
 /* ==============================
    RESPONSYWNOŚĆ
    ============================== */
+   
 
-@media (max-width: 1200px) {
-    .tekst-historia {
-        margin-left: 200px;
+@media (min-width: 1200px) {
+    .historia-page .tekst-historia {
+        padding: 0 80px;
+    }
+
+    .historia-page .tekst-historia p {
+        max-width: auto;
+        text-align: justify;
     }
 }
 
-@media (max-width: 900px) {
-    .historia-page h1 {
-        font-size: 2.4rem;
-        margin-bottom: 40px;
-    }
-
-    .tekst-historia {
-        font-size: 1rem;
-        margin-left: 16px;
-        padding: 0 16px;
+@media (max-width: 1199px) {
+    .historia-page .tekst-historia p {
+        max-width: 68ch;
+        text-align: left;
+        text-indent: 1.2em;
     }
 }
 
@@ -124,16 +118,16 @@ body.historia-page {
     .historia-page .tekst-historia h2 {
         font-size: 1.4rem;
     }
-   .historia-page .tekst-historia {
-        word-spacing: 0.05em;
-        line-height: 1.5;
-        text-align: left;
-        max-width: 68ch;
+     .historia-page .tekst-historia {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 14px;
     }
-   .historia-page .tekst-historia p {
+    .historia-page .tekst-historia p {
+        max-width: 100%;
         text-align: left;
-        word-spacing: 0.04em;
-        line-height: 1.5;
+        text-indent: 0;
+        margin-bottom: 1em;
     }
 
     .tekst-historia {
@@ -316,8 +310,3 @@ h2 {
         display: block;
     }
 }
-
-
-
-
-
