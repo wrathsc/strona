@@ -569,7 +569,7 @@ main {
 
   /* GRID POSTACI – tablet/mid screens */
   .people-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: 3fr;
     gap: 10px;
     justify-items: center;
     width: 100%;
