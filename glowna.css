@@ -527,13 +527,13 @@ main {
   .nav-menu a:hover { background: rgba(0,204,255,0.15); }
 
   /* SIDEBAR TEORIA mobilny */
-  .teoria-sidebar {
+  #teoria-nav.teoria-sidebar {
     position: fixed; top: 0; left: -260px; width: 250px; height: 100dvh;
     padding: 64px 16px 12px; background: rgba(0,0,0,0.95); backdrop-filter: blur(6px);
     z-index: 9999; overflow-y: auto; opacity: 0; visibility: hidden; pointer-events: none;
     transition: left 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
   }
-  .teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
+  #teoria-nav.teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
 
   /* HAMBURGER SIDEBAR TEORIA */
   .sidebar-hamburger-teoria { display: block; top: 18px; left: 18px; z-index: 100001; cursor: pointer; }
@@ -569,7 +569,7 @@ main {
 
   /* GRID POSTACI – tablet/mid screens */
   .people-grid {
-    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     justify-items: center;
     width: 100%;
@@ -583,7 +583,7 @@ main {
   .person-card h3 {
     font-size: 0.95rem;
   }
-  .dict-popup {
+   .dict-popup {
     max-width: 60%;
     font-size: 1rem;
   }
@@ -595,8 +595,8 @@ main {
 
 @media (max-width: 600px) {
    .dict-popup {
-    top: 80px; /* przesunięcie poniżej nav */
-    transform: translate(-50%, 0); /* tylko centrowanie poziome */
+    top: 80px; 
+    transform: translate(-50%, 0);
     max-width: 90%;
     padding: 14px 16px;
     font-size: 0.95rem;
@@ -606,7 +606,6 @@ main {
     right: 16px;
     font-size: 1.6rem;
   }
-}
 
   /* GRID POSTACI – telefony */
    .people-grid {
