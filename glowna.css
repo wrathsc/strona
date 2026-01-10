@@ -555,12 +555,28 @@ main {
   #teoria-container { padding-top: 64px; }
   .postacie-page .dict-popup { width: 92%; font-size: 1rem; }
 }
-
+@media (max-width: 600px) {
+  #teoria-nav.teoria-sidebar {
+    position: fixed; top: 0; left: -260px; width: 250px; height: 100dvh;
+    padding: 64px 16px 12px; background: rgba(0,0,0,0.95); backdrop-filter: blur(6px);
+    z-index: 9999; overflow-y: auto; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: left 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
+  }
+  #teoria-nav.teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
+}
 @media (max-width: 480px) {
   .dict-popup { width: 95%; font-size: 0.95rem; padding: 10px 12px; }
   .dict-popup img { max-height: 50vh; }
   .dict-popup strong { font-size: 1.3rem; }
   #teoria-container { padding-top: 64px; }
+   #teoria-nav.teoria-sidebar {
+    position: fixed; top: 0; left: -260px; width: 250px; height: 100dvh;
+    padding: 64px 16px 12px; background: rgba(0,0,0,0.95); backdrop-filter: blur(6px);
+    z-index: 9999; overflow-y: auto; opacity: 0; visibility: hidden; pointer-events: none;
+    transition: left 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
+  }
+  #teoria-nav.teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
+
 }
 /* =========================
    RESPONSYWNOŚĆ – STRONA POSTACIE
