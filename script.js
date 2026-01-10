@@ -158,7 +158,7 @@ const events = [
   { date: "2008", text: "Produkcja samochodu elektrycznego Tesla Roadster z zasięgiem blisko 400 km." }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
 
   // ===============================
   // TIMELINE
@@ -434,5 +434,33 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-});
+const navToggle = document.getElementById('navToggle');
+const telMenu = document.querySelector('.tel');
 
+// Jeden wysoki handler na document: obsługuje kliknięcie w hamburger, klik wewnątrz .tel oraz klik poza
+document.addEventListener('click', (e) => {
+  const hamburgerClicked = !!e.target.closest('.hamburger');
+  if (hamburgerClicked) {
+    e.preventDefault();
+    e.stopPropagation();
+    const isOpen = telMenu.classList.toggle('open');
+    if (navToggle) navToggle.checked = isOpen;
+    return;
+  }
+
+  // Jeśli menu jest otwarte i klik nastąpił poza nim — zamknij
+  if (telMenu && telMenu.classList.contains('open')) {
+    if (!telMenu.contains(e.target)) {
+      telMenu.classList.remove('open');
+      if (navToggle) navToggle.checked = false;
+      return;
+    }
+    // Klik wewnątrz .tel na link — zamknij
+    const a = e.target.closest('.tel a');
+    if (a) {
+      telMenu.classList.remove('open');
+      if (navToggle) navToggle.checked = false;
+    }
+  }
+});
+});
