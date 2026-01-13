@@ -1,15 +1,11 @@
-/* ==============================
-   STRONA HISTORIA
-   ============================== */
+/* STRONA HISTORIA */
 
 body.historia-page {
     margin: 0;
     padding: 0;
 }
 
-/* ==============================
-   SEKCJA TŁA
-   ============================== */
+/* SEKCJA TŁA */
 
 .historia-page .tlo {
     min-height: 100vh;
@@ -23,9 +19,7 @@ body.historia-page {
     padding: 140px 0 80px; /* górny padding dla menu, dolny dla przestrzeni */
 }
 
-/* ==============================
-   NAGŁÓWEK STRONY
-   ============================== */
+/* NAGŁÓWEK STRONY */
 
 .historia-page h1 {
     text-align: center;
@@ -35,9 +29,7 @@ body.historia-page {
     letter-spacing: 1px;
 }
 
-/* ==============================
-   TEKST HISTORII
-   ============================== */
+/* TEKST HISTORII */
 
 .historia-page .tekst-historia {
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
@@ -86,9 +78,7 @@ body.historia-page {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ==============================
-   RESPONSYWNOŚĆ
-   ============================== */
+/* RESPONSYWNOŚĆ */
    
 
 @media (min-width: 1200px) {
@@ -135,9 +125,7 @@ body.historia-page {
     }
 }
 
-/* ==============================
-   BOCZNE MENU HISTORII
-   ============================== */
+/*  BOCZNE MENU HISTORII */
 
 .historia-sidebar {
     position: fixed;
@@ -184,18 +172,14 @@ body.historia-page {
     background: transparent;
 }
 
-/* ==============================
-   MARGINES TEKSTU WZGLĘDEM SIDEBARU
-   ============================== */
+/* MARGINES TEKSTU WZGLĘDEM SIDEBARU */
 
 .tekst-historia {
     margin-left: 240px;
     transition: margin 0.3s ease;
 }
 
-/* ==============================
-   PŁYNNE PRZEWIJANIE
-   ============================== */
+/*  PŁYNNE PRZEWIJANIE */
 
 html {
     scroll-behavior: smooth;
@@ -205,9 +189,7 @@ h2 {
     scroll-margin-top: 100px;
 }
 
-/* ==============================
-   MINI POSTĘP CZYTANIA
-   ============================== */
+/* MINI POSTĘP CZYTANIA */
 
 #readingProgressContainer {
     position: fixed;
@@ -226,9 +208,7 @@ h2 {
     transition: width 0.15s ease-out;
 }
 
-/* ==============================
-   AKTYWNY ROZDZIAŁ – PODŚWIETLENIE
-   ============================== */
+/*  AKTYWNY ROZDZIAŁ – PODŚWIETLENIE */
 
 .historia-sidebar a.active {
     background: rgba(0, 207, 255, 0.35);
@@ -236,9 +216,7 @@ h2 {
     box-shadow: 0 0 12px rgba(0, 207, 255, 0.6);
 }
 
-/* ==============================
-   HAMBURGER + DROPDOWN SIDEBAR
-   ============================== */
+/*  HAMBURGER + DROPDOWN SIDEBAR */
 
 .sidebar-hamburger {
     display: none;
@@ -310,3 +288,4 @@ h2 {
         display: block;
     }
 }
+
