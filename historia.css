@@ -1,11 +1,15 @@
-/* STRONA HISTORIA */
+/* ==============================
+   STRONA HISTORIA
+   ============================== */
 
 body.historia-page {
     margin: 0;
     padding: 0;
 }
 
-/* SEKCJA TŁA */
+/* ==============================
+   SEKCJA TŁA
+   ============================== */
 
 .historia-page .tlo {
     min-height: 100vh;
@@ -19,7 +23,9 @@ body.historia-page {
     padding: 140px 0 80px; /* górny padding dla menu, dolny dla przestrzeni */
 }
 
-/* NAGŁÓWEK STRONY */
+/* ==============================
+   NAGŁÓWEK STRONY
+   ============================== */
 
 .historia-page h1 {
     text-align: center;
@@ -29,7 +35,9 @@ body.historia-page {
     letter-spacing: 1px;
 }
 
-/* TEKST HISTORII */
+/* ==============================
+   TEKST HISTORII
+   ============================== */
 
 .historia-page .tekst-historia {
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
@@ -78,7 +86,33 @@ body.historia-page {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* RESPONSYWNOŚĆ */
+.foto-block {
+  max-width: 300px;
+  margin: 16px;
+  float: right;
+  text-align: center;
+}
+
+.foto-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color:  #eee;
+}
+
+.img-caption { font-style: italic;  color: #ddd;}
+.img-source a { color: #4aa3ff;; text-decoration: none; }
+.img-source a:hover { text-decoration: underline;}
+
+
+
+/* ==============================
+   RESPONSYWNOŚĆ
+   ============================== */
    
 
 @media (min-width: 1200px) {
@@ -98,6 +132,14 @@ body.historia-page {
         text-align: left;
         text-indent: 1.2em;
     }
+    .image-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-block img {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -123,9 +165,19 @@ body.historia-page {
     .tekst-historia {
         padding: 0 12px;
     }
+    .image-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-block img {
+    margin: 0 auto;
+  }
 }
 
-/*  BOCZNE MENU HISTORII */
+/* ==============================
+   BOCZNE MENU HISTORII
+   ============================== */
 
 .historia-sidebar {
     position: fixed;
@@ -172,14 +224,18 @@ body.historia-page {
     background: transparent;
 }
 
-/* MARGINES TEKSTU WZGLĘDEM SIDEBARU */
+/* ==============================
+   MARGINES TEKSTU WZGLĘDEM SIDEBARU
+   ============================== */
 
 .tekst-historia {
     margin-left: 240px;
     transition: margin 0.3s ease;
 }
 
-/*  PŁYNNE PRZEWIJANIE */
+/* ==============================
+   PŁYNNE PRZEWIJANIE
+   ============================== */
 
 html {
     scroll-behavior: smooth;
@@ -189,7 +245,9 @@ h2 {
     scroll-margin-top: 100px;
 }
 
-/* MINI POSTĘP CZYTANIA */
+/* ==============================
+   MINI POSTĘP CZYTANIA
+   ============================== */
 
 #readingProgressContainer {
     position: fixed;
@@ -208,7 +266,9 @@ h2 {
     transition: width 0.15s ease-out;
 }
 
-/*  AKTYWNY ROZDZIAŁ – PODŚWIETLENIE */
+/* ==============================
+   AKTYWNY ROZDZIAŁ – PODŚWIETLENIE
+   ============================== */
 
 .historia-sidebar a.active {
     background: rgba(0, 207, 255, 0.35);
@@ -216,7 +276,9 @@ h2 {
     box-shadow: 0 0 12px rgba(0, 207, 255, 0.6);
 }
 
-/*  HAMBURGER + DROPDOWN SIDEBAR */
+/* ==============================
+   HAMBURGER + DROPDOWN SIDEBAR
+   ============================== */
 
 .sidebar-hamburger {
     display: none;
@@ -288,4 +350,3 @@ h2 {
         display: block;
     }
 }
-
