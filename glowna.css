@@ -110,6 +110,10 @@ html, body {
   z-index: 100001;
 }
 
+.tel.open {
+  display: block; /* allow JS to toggle visibility */
+}
+
 .tel a {
   display: block;
   color: white;
@@ -304,10 +308,34 @@ main {
   font-size: 1rem;
   line-height: 1.6;
   color: #e0f7ff;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 0.4px;
-  word-break: break-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
   margin-top: 6px;
+}
+
+.dict-source {
+  margin-top: 14px;
+  padding-top: 10px;
+  display: inline;
+  font-size: 0.95rem;
+}
+
+.dict-source a {
+  color: #f700a4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.dict-source a:hover {
+  color: #f700a4;
+  text-decoration: underline;
+}
+
+.dict-source b {
+  color: #00e8ff;
+  font-weight: 700;
 }
 
 /* ==================== POSTACIE ==================== */
@@ -497,6 +525,103 @@ main {
 #teoria-nav a:hover {
   background: rgba(0, 204, 255, 0.15);
 }
+/* ==================== STRONA GŁÓWNA ==================== */
+.start a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.start a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+
+.home-page .hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page .hero h1 {
+  font-size: clamp(34px, 6vw, 64px);
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #00cfff, #a86bff);
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.home-page .hero p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #cceeff;
+  margin-bottom: 56px;
+}
+
+/* KAFELKI */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 26px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tile {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 22px;
+  padding: 40px 26px;
+  text-decoration: none;
+  color: #e8f4ff;
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(0,204,255,0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tile:hover::before {
+  opacity: 1;
+}
+
+.tile:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 45px rgba(0, 204, 255, 0.6);
+}
+
+.tile h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #00cfff;
+}
+
+.tile span {
+  font-size: 1rem;
+  color: #cceeff;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .home-page .hero p {
+    margin-bottom: 36px;
+  }
+
+  .tile {
+    padding: 30px 22px;
+  }
+}
+
 
 /* ==================== RESPONSYWNOŚĆ ==================== */
 @media (max-width: 1000px) {
@@ -504,24 +629,24 @@ main {
 
   /* NAV – mobilny */
   .nav > *:not(.hamburger) { display: none; pointer-events: auto; }
-  .hamburger { display: block; position: fixed; top: 18px; right: 18px; z-index: 10000; cursor: pointer; }
+  .hamburger { display: block; position: fixed; top: 18px; right: 18px; z-index: 100001; cursor: pointer; }
   .hamburger div { width: 28px; height: 3px; background: #00cfff; margin: 6px 0; border-radius: 2px; transition: all 0.3s ease; }
 
   /* MENU NAV mobilne */
   .nav-menu {
-    position: fixed;
-    top: 64px;
-    right: 12px;
-    background: rgba(0,0,0,0.95);
-    backdrop-filter: blur(6px);
-    border-radius: 14px;
-    padding: 12px;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
-  }
+  position: fixed;
+  top: 64px; /* pod nav */
+  right: 12px;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 12px;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
   .nav-menu.open { opacity: 1; visibility: visible; pointer-events: auto; }
   .nav-menu a { display: block; padding: 10px 14px; color: #c2e9ff; text-decoration: none; border-radius: 10px; font-size: 15px; }
   .nav-menu a:hover { background: rgba(0,204,255,0.15); }
@@ -554,6 +679,10 @@ main {
   .event::before { content: ''; position: absolute; top: 20px; left: -10px; width: 14px; height: 14px; background: #00cfff; border-radius: 50%;z-index: 3; }
   #teoria-container { padding-top: 64px; }
   .postacie-page .dict-popup { width: 92%; font-size: 1rem; }
+  /* KAFELKI mobilnie */
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 600px) {
   #teoria-nav.teoria-sidebar {
@@ -563,6 +692,20 @@ main {
     transition: left 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
   }
   #teoria-nav.teoria-sidebar.open { left: 0; opacity: 1; visibility: visible; pointer-events: auto; }
+  .tiles {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .tile {
+    min-height: 140px;
+    padding: 20px 16px;
+  }
+  .tile h3 {
+    font-size: 1.1rem;
+  }
+  .tile span {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 480px) {
   .dict-popup { width: 95%; font-size: 0.95rem; padding: 10px 12px; }
@@ -658,7 +801,21 @@ main {
     font-size: 1rem;
   }
 
+/* ==================== READING PROGRESS BAR ==================== */
+#readingProgressContainer {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
 
-
-
+#readingProgress {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #00cfff, #1a237e);
+    transition: width 0.15s ease-out;
+}
 
