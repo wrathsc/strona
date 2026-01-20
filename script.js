@@ -159,6 +159,36 @@ const events = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+  const fotoElements = document.querySelectorAll('.foto');
+
+  fetch('foto.json')
+    .then(res => res.json())
+    .then(data => {
+      fotoElements.forEach(el => {
+        const key = el.dataset.key;
+        const foto = data[key];
+        if (!foto) return;
+
+        // Tworzymy blok z klasą .foto-block
+        const block = document.createElement('div');
+        block.className = 'foto-block';
+
+        block.innerHTML = `
+          <img src="${foto.src}" alt="${foto.caption}" loading="lazy">
+          <figcaption>
+            <p class="img-caption">${foto.caption}</p>
+            <p class="img-source">
+              <a href="${foto.source}" target="_blank" rel="noopener noreferrer">Źródło</a>
+            </p>
+          </figcaption>
+        `;
+
+        el.appendChild(block);
+      });
+    })
+    .catch(err => console.error("Błąd wczytywania JSON:", err));
+});
 
   // ===============================
   // TIMELINE
@@ -291,18 +321,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===============================
   // JSON → POPUP / TEORIA
   // ===============================
-  const pageJsonMap = { "historia-page": "opis.json", "postacie-page": "postacie.json", "teoria-page": "teoria.json" };
+  const pageJsonMap = { "historia-page": ["opis.json","postacie.json"], "postacie-page": ["postacie.json"], "teoria-page": ["teoria.json"] };
   let jsonUrl = null;
   Object.keys(pageJsonMap).forEach(cls => { if (document.body.classList.contains(cls)) jsonUrl = pageJsonMap[cls]; });
 
   let dictionary = {}, popup = null, dictionaryLoaded = false;
 
   if (jsonUrl) {
-    fetch(jsonUrl)
-      .then(res => res.json())
-      .then(data => { dictionary = data; dictionaryLoaded = true; })
-      .catch(err => console.error("Błąd wczytywania JSON:", err));
-  }
+  Promise.all(
+    jsonUrl.map(url =>
+      fetch(url).then(res => res.json())
+    )
+  )
+  .then(jsons => {
+    jsons.forEach(data => {
+      Object.assign(dictionary, data);
+    });
+    dictionaryLoaded = true;
+  })
+  .catch(err => console.error("Błąd wczytywania JSON:", err));
+}
 
   document.addEventListener("click", e => {
     const popupImg = e.target.closest(".dict-popup img");
@@ -338,6 +376,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const paragraphs = []; for (let i = 0; i < sentences.length; i += 2) paragraphs.push(`<p>${sentences.slice(i, i+2).join(" ")}</p>`);
     text.innerHTML = paragraphs.join(""); text.style.marginTop = "20px"; popup.appendChild(text);
 
+    const source = document.createElement("div"); 
+    source.className = "dict-source"; 
+    source.innerHTML = entry.source ? "<b>Źródło:</b> " + entry.source : ""; 
+    popup.appendChild(source);
+
     document.body.appendChild(popup);
   });
 
@@ -348,7 +391,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const teoriaSidebar = document.getElementById("teoria-nav");
   const teoriaHamburger = document.querySelector(".sidebar-hamburger-teoria");
 
-  if (teoriaContainer && teoriaSidebar && jsonUrl === "teoria.json") {
+  if (
+  teoriaContainer &&
+  teoriaSidebar &&
+  Array.isArray(jsonUrl) &&
+  jsonUrl.includes("teoria.json"))
+   {
     fetch(jsonUrl)
       .then(res => res.json())
       .then(blocks => {
@@ -462,5 +510,6 @@ document.addEventListener('click', (e) => {
       if (navToggle) navToggle.checked = false;
     }
   }
+  
 });
-});
+
