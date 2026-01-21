@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const fotoElements = document.querySelectorAll('.foto');
 
-  fetch('foto.json')
+  fetch('biblioteki/foto.json')
     .then(res => res.json())
     .then(data => {
       fotoElements.forEach(el => {
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===============================
   // JSON → POPUP / TEORIA
   // ===============================
-  const pageJsonMap = { "historia-page": ["opis.json","postacie.json"], "postacie-page": ["postacie.json"], "teoria-page": ["teoria.json"] };
+  const pageJsonMap = { "historia-page": ["biblioteki/opis.json","biblioteki/postacie.json"], "postacie-page": ["biblioteki/postacie.json"], "teoria-page": ["biblioteki/teoria.json"] };
   let jsonUrl = null;
   Object.keys(pageJsonMap).forEach(cls => { if (document.body.classList.contains(cls)) jsonUrl = pageJsonMap[cls]; });
 
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
   teoriaContainer &&
   teoriaSidebar &&
   Array.isArray(jsonUrl) &&
-  jsonUrl.includes("teoria.json"))
+  jsonUrl.includes("biblioteki/teoria.json"))
    {
     fetch(jsonUrl)
       .then(res => res.json())
