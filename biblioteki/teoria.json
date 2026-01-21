@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Versorium",
+    "description": "Pierwszy w historii instrument elektrostatyczny, wynaleziony przez Williama Gilberta. Urządzenie składało się z lekkiej, metalowej igły swobodnie obracającej się na pionowym trzpieniu. W przeciwieństwie do kompasu, igła nie była namagnesowana; służyła do wykrywania ładunków elektrostatycznych. Gdy naelektryzowany przedmiot zbliżał się do versorium, igła obracała się w jego stronę dzięki indukcji elektrostatycznej, co pozwoliło na naukowe rozróżnienie zjawisk magnetycznych od elektrycznych.",
+    "video": "https://www.youtube.com/embed/cUw75LgY74A"
+  },
+  {
+    "title": "Maszyna elektrostatyczna (Maszyna Wimshursta)",
+    "description": "Generator elektrostatyczny służący do wytwarzania wysokiego napięcia poprzez indukcję. Urządzenie składa się z dwóch przeciwbieżnie obracających się izolacyjnych tarcz z metalowymi segmentami. Poprzez układ szczotek i grzebieni, ładunki elektryczne o przeciwnych znakach są rozdzielane i gromadzone, najczęściej w butelkach lejdejskich pełniacych rolę kondensatorów. Maszyna pozwala na generowanie widowiskowych wyładowań iskrowych i jest kluczowym narzędziem dydaktycznym w demonstracji zjawisk elektrostatyki.",
+    "video": "https://www.youtube.com/embed/WNMsCzFwhuc"
+  },
+  {
+  "title": "Młynek Franklina zasilany transformatorem Tesli",
+  "description": "Eksperymentalne połączenie dwóch klasycznych urządzeń fizycznych, w którym transformator Tesli służy jako źródło bardzo wysokiego napięcia o wysokiej częstotliwości, a młynek Franklina pełni rolę terminala wyładowczego. Po umieszczeniu młynka na szczycie cewki wtórnej transformatora, silne pole elektryczne powoduje gwałtowny ulot ładunków z ostrzy ramion. Jonizacja powietrza i powstający 'wiatr elektryczny' wprawiają młynek w bardzo szybki ruch obrotowy, czemu często towarzyszą świecące wyładowania koronowe na końcach ostrzy, tworząc efektowną demonstrację dynamiki gazów w polu elektrycznym.",
+  "video": [
+  "https://www.youtube.com/embed/lMzAYtXTaxw",
+  "https://www.youtube.com/embed/FfDE8JE-1SM"
+]},
+{
+  "title": "Waga skręceń",
+  "description": "Niezwykle czuły przyrząd pomiarowy wykorzystywany do wyznaczania bardzo małych sił, takich jak oddziaływania elektrostatyczne czy grawitacyjne. Składa się z lekkiego pręta zawieszonego na cienkiej, elastycznej nici lub drucie. Przyłożenie siły do końców pręta powoduje skręcenie nici, a kąt tego skręcenia jest proporcjonalny do działającej siły. Urządzenie to pozwoliło Charlesowi Coulombowi sformułować prawo rządzące oddziaływaniem ładunków elektrycznych, a Henry’emu Cavendishowi wyznaczyć stałą grawitacji i masę Ziemi.",
+  "video": "https://www.youtube.com/embed/fw9n1qQYAfQ"
+},
+{
+  "title": "Magnetyzm i jego praktyczne oblicza",
+  "description": "Ten materiał to dynamiczny przewodnik po świecie zjawisk magnetycznych, który wyjaśnia, dlaczego magnesy się przyciągają i jak prąd elektryczny tworzy niewidzialne pola sił. Dowiesz się z niego, czym są ferromagnetyki i jak domeny magnetyczne w ich wnętrzu porządkują się pod wpływem zewnętrznych bodźców. Film w prosty sposób obrazuje zasady wyznaczania kierunku pola magnetycznego przy pomocy reguły prawej dłoni oraz tłumaczy działanie siły Lorentza, która zakrzywia tor ruchu ładunków elektrycznych. Zwieńczeniem opisu jest praktyczne spojrzenie na siłę elektrodynamiczną, która jest „sercem” każdego silnika elektrycznego – od małego miksera po potężne napędy hulajnóg. To esencja wiedzy o tym, jak magnetyzm napędza współczesną technologię.",
+  "video": "https://www.youtube.com/embed/ucqd_0HIvNY"
+},
+{
+  "title": "Prawo Coulomba",
+  "description": "Podstawowe prawo elektrostatyki opisujące siłę oddziaływania między dwoma punktowymi ładunkami elektrycznymi. Głosi ono, że siła wzajemnego oddziaływania jest wprost proporcjonalna do iloczynu wartości tych ładunków i odwrotnie proporcjonalna do kwadratu odległości między nimi. Prawo to zostało sformułowane przez Charlesa Coulomba w 1785 roku dzięki pomiarom wykonanym za pomocą wagi skręceń, co pozwoliło na matematyczne ujęcie zjawisk elektrycznych analogicznie do prawa powszechnego ciążenia Newtona.",
+  "video": "https://www.youtube.com/embed/FYSTGX-F1GM"
+},
+{
+  "title": "Prawo Ohma",
+  "description": "Podstawowa zasada elektrotechniki, która określa relację między napięciem, natężeniem i oporem elektrycznym. Mówi ona o tym, że natężenie prądu płynącego przez przewodnik jest wprost proporcjonalne do napięcia przyłożonego do jego końców. W praktyce oznacza to, że jeśli zwiększymy napięcie w obwodzie, natężenie prądu również wzrośnie, o ile opór pozostanie bez zmian. Prawo to jest fundamentalne dla zrozumienia działania wszystkich urządzeń zasilanych energią elektryczną.",
+  "video": "https://www.youtube.com/embed/nWt-hf_JcZY"
+},
+{
+  "title": "Pierwsze Prawo Kirchhoffa",
+  "description": "Znane również jako prądowe prawo Kirchhoffa lub prawo węzłów. Głosi ono, że suma natężeń prądów wpływających do węzła obwodu elektrycznego jest równa sumie natężeń prądów z niego wypływających. Można to rozumieć tak: ile prądu 'wpłynie' do rozgałęzienia przewodów, dokładnie tyle samo musi z niego 'wypłynąć', ponieważ ładunek elektryczny nie może się tam gromadzić ani znikać. Jest to bezpośrednia konsekwencja zasady zachowania ładunku. Prawo to sformułował Gustav Robert Kirchhoff, co stało się fundamentem analizy obwodów elektrycznych.",
+  "video": "https://www.youtube.com/embed/DZQJ8JCAkn8"
+},
+{
+  "title": "Drugie Prawo Kirchhoffa",
+  "description": "Nazywane również napięciowym prawem Kirchhoffa. Odnosi się ono do bilansu napięć w zamkniętym oczku obwodu elektrycznego. Według tej zasady, suma algebraiczna wszystkich napięć (spadków napięcia oraz sił elektromotorycznych źródeł) w zamkniętym obwodzie jest równa zeru. Wynika to z zasady zachowania energii – energia przekazywana ładunkom przez źródła zasilania musi zostać w całości rozproszona na odbiornikach (np. opornikach) w obrębie tego samego oczka. Prawo to, opracowane przez Kirchhoffa, pozwala na precyzyjne wyznaczanie rozkładu napięć w nawet bardzo skomplikowanych sieciach elektrycznych.",
+  "video": "https://www.youtube.com/embed/_-yeXMNZ6FI"
+},
+{
+  "title": "Prawo Faradaya i Reguła Lenza",
+  "description": "Zjawisko indukcji elektromagnetycznej składa się z dwóch kluczowych elementów. Prawo Faradaya mówi nam, że zmieniające się pole magnetyczne wytwarza napięcie elektryczne. Natomiast reguła Lenza określa kierunek, w jakim popłynie tak wzbudzony prąd. Według tej reguły, prąd indukcyjny płynie zawsze w takim kierunku, aby wytworzone przez niego pole magnetyczne przeciwdziałało przyczynie, która go wywołała. Można to nazwać zasadą przekory w przyrodzie: jeśli zbliżasz magnes do cewki, prąd popłynie tak, aby odepchnąć ten magnes. Odkrycia te zawdzięczamy Michaelowi Faradayowi oraz Heinrichowi Lenzowi.",
+  "video": "https://www.youtube.com/embed/9lu5QqQAZwo"
+},
+{
+  "title": "Prawo Joule'a-Lenza",
+  "description": "Prawo to opisuje zjawisko wydzielania się ciepła podczas przepływu prądu elektrycznego przez przewodnik. Mówi ono, że ilość ciepła wytworzonego w przewodzie zależy od jego oporu, czasu przepływu prądu oraz natężenia prądu (podniesionego do kwadratu). W praktyce oznacza to, że im większy opór stawia urządzenie i im większy prąd przez nie płynie, tym mocniej się ono nagrzewa. Zjawisko to wykorzystujemy celowo w czajnikach elektrycznych, żelazkach czy grzejnikach, ale jest ono niepożądane w liniach przesyłowych, gdzie powoduje straty energii. Prawo to sformułowali niezależnie James Prescott Joule oraz Heinrich Lenz.",
+  "video": "https://www.youtube.com/embed/FE0J_sC0sh8"
+},
+{
+  "title": "Równania Maxwella: Fundament Elektrodynamiki",
+  "description": "Wykład prowadzony przez naukowca z Politechniki Wrocławskiej, który w kompleksowy sposób omawia cztery fundamentalne równania Maxwella. Materiał przybliża sylwetkę Jamesa Clerka Maxwella i wyjaśnia znaczenie jego prac dla unifikacji teorii elektryczności, magnetyzmu oraz światła. Kluczowym elementem filmu jest hipoteza Maxwella dotycząca prądu przesunięcia, która pozwoliła wyjaśnić przepływ prądu przemiennego przez kondensator. Autor prezentuje równania w postaci całkowej i różniczkowej, omawiając kolejno: prawo Gaussa dla elektryczności i magnetyzmu, prawo indukcji Faradaya oraz prawo Ampère'a z poprawką Maxwella. Wykład kończy się wyprowadzeniem równania ciągłości i wnioskiem, że światło jest falą elektromagnetyczną, co położyło podwaliny pod rozwój współczesnej radiokomunikacji.",
+  "video": "https://www.youtube.com/embed/rQskflMk4fc"
+},
+{
+  "title": "Zasada Superpozycji",
+  "description": "Fundamentalna metoda analizy obwodów liniowych. Pozwala ona obliczyć odpowiedź obwodu (napięcie lub prąd) z wieloma źródłami niezależnymi poprzez sumowanie efektów działania każdego źródła z osobna, podczas gdy pozostałe są zastąpione ich rezystancjami wewnętrznymi (źródła napięcia zwarciem, a źródła prądu przerwą). Zasada ta wynika bezpośrednio z liniowości równań opisujących obwody elektryczne.",
+  "video": "https://www.youtube.com/embed/_ljwZIQKz80"
+},
+{
+  "title": "Metoda prądów oczkowych (metoda Maxwella)",
+  "description": "Jedna z najbardziej eleganckich i systematycznych metod analizy obwodów elektrycznych. Pozwala ona na znaczne uproszczenie obliczeń poprzez zmniejszenie liczby równań potrzebnych do opisania obwodu. Zamiast skupiać się na rzeczywistych prądach w każdej gałęzi, wprowadzamy pojęcie fikcyjnych 'prądów oczkowych', które krążą tylko wewnątrz zamkniętych pętli (oczek) obwodu. Metoda ta opiera się bezpośrednio na II Prawie Kirchhoffa. Rzeczywisty prąd w przewodzie wspólnym dla dwóch oczek oblicza się jako różnicę lub sumę tych fikcyjnych prądów. Metodę tę sformułował James Clerk Maxwell, co pozwoliło inżynierom na analizę bardzo złożonych sieci energetycznych.",
+  "video": "https://www.youtube.com/embed/eRA3sc0oOak"
+},
+{
+  "title": "Twierdzenie Thévenina",
+  "description": "Jedno z najważniejszych twierdzeń w analizie obwodów liniowych. Mówi ono, że dowolną sieć liniowych źródeł napięcia i rezystorów posiadającą dwa zaciski wyjściowe można zastąpić obwodem równoważnym, składającym się tylko z jednego idealnego źródła napięcia (Uth) i jednego połączonego z nim szeregowo rezystora (Rth). Twierdzenie to, sformułowane przez Léona Charlesa Thévenina ( 1857-1926), niezwykle upraszcza projektowanie wzmacniaczy i systemów zasilania.",
+  "video": "https://www.youtube.com/embed/t-wtXgeWpOo"
+},
+{
+  "title": "Fizyka: Kompleksowe wprowadzenie do elektrostatyki",
+  "description": "Szczegółowy materiał edukacyjny Uniwersytetu Śląskiego prezentujący kluczowe zjawiska elektrostatyczne poprzez serię doświadczeń. Film demonstruje elektryzowanie ciał (przez dotyk, tarcie i indukcję) oraz wzajemne oddziaływanie ładunków jedno- i różnoimiennych [00:03:34]. Wyjaśnia zasadę zachowania ładunku w układach izolowanych [00:06:45] oraz działanie elektroskopu jako miernika różnicy potencjałów [00:08:40]. Widz może zobaczyć wizualizację linii pola elektrycznego (pole centralne, dipol, pole jednorodne) przy użyciu kaszki mannej i oleju [00:13:08]. Materiał omawia również specyfikę naelektryzowanego przewodnika (ładunek na powierzchni), działanie klatki Faradaya [00:18:03], młynka Franklina [00:15:48] oraz elektroforu Volty [00:20:53]. Końcowa część poświęcona jest kondensatorowi płaskiemu – analizie czynników wpływających na jego pojemność (odległość, powierzchnia, dielektryk) [00:23:10] oraz procesowi jego rozładowania za pomocą oscylującej piłeczki [00:26:55].",
+  "video": "https://www.youtube.com/embed/P7WhUwFeNqM"
+},
+{
+  "title": "Fizyka: Pole magnetyczne i indukcja elektromagnetyczna",
+  "description": "Obszerny materiał dydaktyczny Uniwersytetu Śląskiego poświęcony magnetyzmowi. Film rozpoczyna się od prezentacji pól magnetycznych magnesów trwałych za pomocą opiłków żelaza [00:00:47]. Następnie przedstawia przełomowe doświadczenie Oersteda, dowodzące istnienia pola magnetycznego wokół przewodnika z prądem [00:04:38], oraz regułę prawej dłoni do wyznaczania jego zwrotu [00:08:34]. Omówiono siłę Lorentza na przykładzie odchylania wiązki elektronów w oscyloskopie [00:09:50] oraz wzajemne oddziaływanie równoległych przewodników z prądem [00:11:24]. Kluczowa część filmu poświęcona jest indukcji elektromagnetycznej Faradaya – pokazano różne sposoby wzbudzania prądu [00:16:32], zależność siły elektromotorycznej od szybkości zmian strumienia [00:17:51] oraz regułę Lenza na przykładzie pierścienia aluminiowego [00:21:18]. Materiał kończą doświadczenia z prądami wirowymi (prądy Foucaulta) i ich wpływem hamującym na ruch metali w polu magnetycznym [00:23:33], a także pokaz właściwości diamagnetycznych płomienia [00:26:55].",
+  "video": "https://www.youtube.com/embed/SDHmIMqug6Y"
+},
+{
+  "title": "Klatka Faradaya",
+  "description": "Metalowa osłona, która blokuje pole elektryczne. Dzięki niej pasażerowie samolotu są bezpieczni podczas uderzenia pioruna, a Twój telefon traci zasięg w windzie. Ładunki elektryczne 'rozpływają' się po zewnętrznej powierzchni metalu, pozostawiając wnętrze nietknięte. Nazwana na cześć Michaela Faradaya.",
+  "video": "https://www.youtube.com/embed/n1a9IBfvgIs"
+},
+{
+  "title": "Nikola Tesla - Wizjoner Elektryczności",
+  "description": "Historia geniusza, który zaczynał w Paryżu, a do USA przybył z listem polecającym do Edisona. Film opisuje, jak Tesla zrewolucjonizował świat prądem zmiennym po tym, gdy Edison oszukał go na obiecanej nagrodzie. Ciekawostka: Tesla opatentował radio przed Marconim, co sąd uznał dopiero po jego śmierci. Marzył też o darmowej energii dla całego świata przesyłanej bezprzewodowo.",
+  "video": "https://www.youtube.com/embed/k1ox8lYoNtk"
+},
+{
+  "title": "Muzyczna Cewka Tesli",
+  "description": "Błyskawice, które grają muzykę. Dźwięk powstaje przez wibrujące powietrze wokół wyładowań, a nie z głośników. Ukazanie że cewka Tesli może być instrumentem muzycznym.",
+  "video": "https://www.youtube.com/embed/pyTC0Ggufak"
+},
+{
+  "title": "Tomasz Alva Edison - Biznesmen i Wynalazca",
+  "description": "Film przedstawia sylwetkę Thomasa Alvy Edisona (urodzony 11 lutego 1847, zmarł 18 października 1931), ikony ery wynalazków, który zarejestrował ponad 1000 patentów. Materiał podkreśla, że Edison był nie tylko genialnym samoukiem, ale przede wszystkim sprawnym przedsiębiorcą, prowadzącym masowe laboratoria badawcze w Menlo Park. Do jego najważniejszych osiągnięć należą udoskonalenie żarówki elektrycznej, stworzenie fonografu, kinetoskopu oraz pierwszej publicznej elektrowni w Nowym Jorku. Film wspomina również o słynnej 'wojnie o prąd' z Nikolą Teslą, w której Edison bezskutecznie bronił prądu stałego przed prądem zmiennym, uciekając się nawet do drastycznych pokazów z wykorzystaniem krzesła elektrycznego.",
+  "video": "https://www.youtube.com/embed/DzGXjk5wTPo"
+}
+]

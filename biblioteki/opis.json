@@ -1,0 +1,89 @@
+{
+  "bagdad": {
+    "text": "Wewnątrz glinianych dzbanów znajdował się izolowany cylinder z miedzianej blachy z umieszczonym w nim żelaznym prętem, całość uszczelniona korkiem z asfaltu. Konstrukcja ta przypominała ogniwo elektryczne - po napełnieniu naczynia naturalnymi kwasami (np. sokiem z winogron) powstawała różnica potencjałów między miedzią a żelazem.",
+    "image": "img/bagdad.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Bateria_z_Bagdadu\" target=\"_blank\">https://pl.wikipedia.org/wiki/Bateria_z_Bagdadu</a>"
+  },
+  "versorium": {
+    "text": "Versorium było prostym przyrządem zbudowanym z lekkiej metalowej igły (najczęściej mosiężnej), osadzonej poziomo na ostrym trzpieniu, dzięki czemu mogła swobodnie obracać się w płaszczyźnie poziomej. Konstrukcyjnie przypominało bardzo prosty kompas, lecz bez namagnesowania. Gdy w pobliżu versorium umieszczano naelektryzowany przedmiot (np. potarty bursztyn, szkło lub siarkę), igła obracała się w jego stronę. Ruch ten był wynikiem oddziaływania elektrostatycznego, a nie magnetycznego, co pozwoliło Gilbertowi odróżnić elektryczność od magnetyzmu.",
+    "image": "img/versorium.png",
+    "source": "<a href=\"https://en.wikipedia.org/wiki/Versorium\" target=\"_blank\">https://en.wikipedia.org/wiki/Versorium</a>"
+  },
+  "elektroskop_listkowy": { 
+    "text": "Przyrząd służący do wykrywania ładunku elektrycznego, który składa się z metalowego pręta zakończonego u góry kulką i zamocowanych u dołu dwóch lekkich metalowych listków umieszczonych w izolującej obudowie, a jego działanie opiera się na zjawisku odpychania się jednoimiennych ładunków, co objawia się rozchyleniem listków w momencie przekazania im ładunku drogą dotyku lub jego przesunięcia w wyniku indukcji elektrostatycznej.",
+    "image": "img/elektroskop_listkowy.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Elektroskop\" target=\"_blank\">https://pl.wikipedia.org/wiki/Elektroskop</a>"
+  },
+  "butelka_lejdejska": { 
+    "text": "Pierwszy kondensator składający się ze szklanego słoika pełniącego rolę izolatora oddzielającego dwie metalowe okładziny, z których wewnętrzna połączona jest z metalowym prętem wyprowadzonym przez korek na zewnątrz, co umożliwia gromadzenie i przechowywanie znacznego ładunku elektrycznego dzięki wzajemnemu oddziaływaniu ładunków o przeciwnych znakach skupionych na odizolowanych od siebie powierzchniach przewodzących.",
+    "image":  "img/butelka_lejdejska.png",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Butelka_lejdejska\" target=\"_blank\">https://pl.wikipedia.org/wiki/Butelka_lejdejska</a>"
+  },
+  "eksperyment_latawcem": { 
+    "text": "Latawiec zbudowany z listew cedrowych i owinięty jedwabną chustą został wyposażony w trzydziestocentymetrowy metalowy pręt o zaostrzonym końcu, a jego sznurek, namoczony wodą dla lepszego przewodzenia elektryczności, pozwalał ładunkom spływać z chmur burzowych wprost do przywiązanego na dole metalowego klucza, podczas gdy Franklin trzymając całość za dodatkowy odcinek suchego jedwabiu obserwował iskry przeskakujące między kluczem a dłonią, co potwierdziło elektryczną naturę pioruna.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Benjamin_Franklin#Eksperyment_z_latawcem\" target=\"_blank\">https://pl.wikipedia.org/wiki/Benjamin_Franklin#Eksperyment_z_latawcem</a>"
+   },
+  "waga_skretna": { 
+    "text": "Przyrząd do pomiaru małych sił, np. elektrostatycznych lub grawitacyjnych. Przyrząd ten składa się z dwóch jednakowych mas umieszczonych na końcach lekkiej, poziomej belki zawieszonej na cienkiej, skrętnej nici. Skonstruowana została niezależnie przez Johna Michella i Charles'a Coulomba, który badał za jej pomocą siły elektrostatyczne; Henry Cavendish użył jej do wyznaczenia stałej grawitacji.",
+    "image":  "img/waga_skretna.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Waga_skręceń\" target=\"_blank\">https://pl.wikipedia.org/wiki/Waga_skręceń</a>"
+  },
+  "elektrofor": { 
+    "text": "Generator ładunku działający na zasadzie indukcji elektrostatycznej, udoskonalony w 1775 roku przez Alessandra Voltę, który składa się z płyty dielektrycznej oraz metalowego dysku z izolującym uchwytem. Po zbliżeniu metalowej płyty do naelektryzowanej podstawy i jej krótkim uziemieniu, na metalu zostaje zgromadzony ładunek przeciwny do ładunku dielektryka, co pozwala na wielokrotne pobieranie energii elektrycznej bez konieczności ponownego pocierania podstawy, dzięki czemu urządzenie to pełni rolę specyficznego kondensatora o ruchomych okładzinach.",
+    "image":  "img/elektrofor.png",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Elektrofor\" target=\"_blank\">https://pl.wikipedia.org/wiki/Elektrofor</a>"
+  },
+  "maszyna_elektrostatyczna": { 
+    "text": "Maszyna elektrostatyczna, znana też jako generator elektrostatyczny (np. maszyna Wimshursta), to urządzenie wytwarzające wysokie napięcie i gromadzące ładunki elektryczne (dodatnie i ujemne oddzielnie), często w butelkach lejdejskich, służące do demonstracji zjawisk elektrostatyki, takich jak iskry, wyładowania czy linie sił pola. Działa na zasadzie indukcji elektrostatycznej, wykorzystując obracające się tarcze z metalowymi segmentami, które zbierają ładunki, umożliwiając widowiskowe eksperymenty w nauce fizyki.",
+    "image":  "img/maszyna_elektrostatyczna.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Maszyna_elektrostatyczna\" target=\"_blank\">https://pl.wikipedia.org/wiki/Maszyna_elektrostatyczna</a>"
+  },
+  "stos_Volty": { 
+    "text": "Stos Volty to pierwsza w historii bateria elektryczna, wynaleziona w 1800 roku przez Alessandra Voltę. Jest to urządzenie, które zamienia energię chemiczną bezpośrednio w energię elektryczną, zapewniając stały przepływ prądu. Stos Volty generuje prąd dzięki reakcji chemicznej zachodzącej między dwoma różnymi metalami a oddzielającym je elektrolitem. Wewnątrz urządzenia cynk oddaje elektrony, które płyną przez zewnętrzny przewód do miedzi, tworząc strumień energii elektrycznej. Jednocześnie elektrolit umożliwia ruch jonów między krążkami, co domyka obwód i pozwala na ciągłą pracę ogniwa. Dzięki ułożeniu wielu takich par jedna na drugiej, napięcie poszczególnych warstw sumuje się, tworząc silne źródło prądu stałego.",
+    "image":  "img/stos_volty.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Stos_Volty\" target=\"_blank\">https://pl.wikipedia.org/wiki/Stos_Volty</a>"
+  },
+  "galwometr": { 
+    "text": "Precyzyjne urządzenie elektromechaniczne służące do wykrywania oraz pomiaru niewielkich natężeń prądu elektrycznego. W przeciwieństwie do zwykłego amperomierza, galwanometr jest niezwykle czuły i często wskazuje nie tylko wartość, ale i kierunek przepływu prądu.",
+    "image":  "img/galwometr.jpg",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Galwanometr\" target=\"_blank\">https://pl.wikipedia.org/wiki/Galwanometr</a>"
+  },
+  "prawo_ohma": { 
+    "text": "To jedno z najbardziej fundamentalnych praw elektrotechniki. Określa ono relację pomiędzy natężeniem prądu elektrycznego, napięciem oraz oporem (rezystancją) przewodnika.  Zgodnie z prawem Ohma, natężenie prądu (I) płynącego przez przewodnik jest wprost proporcjonalne do napięcia (U) przyłożonego do jego końców, pod warunkiem, że temperatura i inne parametry fizyczne przewodnika pozostają niezmienne. ",
+    "image":  "img/prawo_ohma.png",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Prawo_Ohma\" target=\"_blank\">https://pl.wikipedia.org/wiki/Prawo_Ohma</a>"
+  },
+  "indukcja_elektromagnetyczna": { 
+    "text": "Zjawisko powstawania siły elektromotorycznej w przewodniku na skutek zmian strumienia pola magnetycznego. Zmiana ta może być spowodowana zmianami pola magnetycznego lub względnym ruchem przewodnika i źródła pola magnetycznego. Jest to fundamentalny proces, który pozwala zamieniać energię mechaniczną na elektryczną.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Indukcja_elektromagnetyczna\" target=\"_blank\">https://pl.wikipedia.org/wiki/Indukcja_elektromagnetyczna</a>"
+  },
+  "samoindukcja": { 
+    "text": "Zjawisko elektromagnetyczne, jest szczególnym przypadkiem zjawiska indukcji elektromagnetycznej. Samoindukcja występuje, gdy siła elektromotoryczna wytwarzana jest w tym samym obwodzie, w którym płynie prąd powodujący indukcję, powstająca siła elektromotoryczna przeciwstawia się zmianom natężenia prądu elektrycznego. Indukcyjność obwodu jest równa sile elektromotorycznej samoindukcji jaka powstaje w obwodzie przy zmianie natężenia o 1 amper występująca w czasie 1 sekundy.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Samoindukcja\" target=\"_blank\">https://pl.wikipedia.org/wiki/Samoindukcja</a>"
+  },
+  "prawo_przekory": { 
+    "text": "Prawo Lenza lub reguła Lenza, zwana również regułą przekory - reguła określająca kierunek zjawisk zachodzących w procesie indukcji elektromagnetycznej. Mówi ona, że prąd indukcyjny (nazywany też prądem wtórnym) wzbudzony w przewodniku pod wpływem zmiennego pola magnetycznego, ma zawsze taki kierunek, że wytworzone wtórne pole magnetyczne przeciwdziała przyczynie (czyli zmianie pierwotnego pola magnetycznego), która go wywołała.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Prawo_Lenza\" target=\"_blank\">https://pl.wikipedia.org/wiki/Prawo_Lenza</a>"
+  },
+  "wahadło_Waltenhofena": { 
+    "text": "Doświadczenie fizyczne z zakresu elektromagnetyzmu. Polega ono na wprawieniu w ruch swobodnie zawieszonego wahadła - z dwiema płytkami: bez nacięć oraz z naciętymi punktami - pomiędzy dwa konduktory stożkowe zamocowane na rdzeniu transformatora i podłączeniu cewki tego transformatora do sieci elektrycznej. W szkołach do doświadczenia wykorzystuje się zazwyczaj transformatory rozbieralne ze stosownymi elementami wyposażenia. Po włączeniu transformatora do sieci, czyli po wejściu wahadła w obszar pola magnetycznego, tarcza gwałtownie hamuje, ponieważ zmiana pola magnetycznego obejmowanego przez tarczę powoduje indukowanie się wewnątrz niej prądów wirowych, których pole magnetyczne, zgodnie z regułą Lenza, przeciwdziała ruchowi. W przypadku tarczy bez nacięć, hamowanie jest gwałtowne, zaś w przypadku użycia naciętej tarczy wahadła, hamowanie jest bardzo płynne. Doświadczenie świadczy o tym, że zmiana pola magnetycznego wywołuje powstawanie wirowego pola elektrycznego, powodującego ruch ładunków w przewodniku lub metalowej płycie.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Wahadło_Waltenhofena\" target=\"_blank\">https://pl.wikipedia.org/wiki/Wahadło_Waltenhofena</a>"
+  },
+  "prawo_Joule_Lenza": { 
+    "text": "Pozwala wyznaczyć ilość ciepła, które wydziela się podczas przepływu prądu elektrycznego przez przewodnik elektryczny. Ilość ciepła wydzielanego w czasie przepływu prądu elektrycznego przez przewodnik elektryczny jest wprost proporcjonalna do iloczynu oporu elektrycznego przewodnika, kwadratu natężenia prądu i czasu jego przepływu.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Prawo_Joule’a_(prąd_elektryczny)\" target=\"_blank\">https://pl.wikipedia.org/wiki/Prawo_Joule’a_(prąd_elektryczny)</a>"
+},
+  "równaie_telegrafistów": { 
+    "text": "Pary liniowych równań różniczkowych, które opisują zmiany zespolonej amplitudy napięcia i prądu wzdłuż linii długiej z uwzględnieniem odległości oraz czasu. Teoria dotyczy wysokoczęstotliwościowych linii długich (takich jak linie telegraficzne), ale jest również ważna dla projektowania linii przesyłowych o wysokim napięciu elektrycznym. Model najłatwiej przedstawić na elementarnym odcinku dwuprzewodowej linii długiej, w którym ważną rolę gra dobrze przewodzący metal wykorzystany w kablach oraz izolujący materiał dielektryczny zastosowany do oddzielenia przewodników. Proces zmian napięcia oraz prądu w takim modelu zakłada, że wywołanie przyrostu napięcia na jednym końcu linii nie daje natychmiastowego pojawienia się takiego samego przyrostu na drugim końcu linii. Przyjmuje się zatem, że propagacja zachodzi tylko w jednym wymiarze wzdłuż linii długiej.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Równania_telegrafistów\" target=\"_blank\">https://pl.wikipedia.org/wiki/Równania_telegrafistów</a>"
+  },
+  "metoda_symboliczna": { 
+    "text": "Metoda symboliczna (lub metoda liczb zespolonych) to technika stosowana głównie w elektrotechnice do uproszczonej analizy obwodów prądu przemiennego (AC) poprzez przekształcanie czasowych przebiegów sinusoidalnych na liczby zespolone, co zamienia skomplikowane równania różniczkowo-całkowe na proste działania algebraiczne z impedancjami.",
+    "source": "<a href=\"https://ewektor.pl/ac/metoda-symboliczna/\" target=\"_blank\">https://ewektor.pl/ac/metoda-symboliczna/</a>"
+  },
+  "nadprzewodnictwo": { 
+    "text": "Stan materiału polegający na zerowej rezystancji, jest osiągany w niektórych materiałach w niskiej temperaturze. Podstawową cechą charakteryzującą nadprzewodniki jest spadek do zera ich oporu elektrycznego (rezystancji) poniżej pewnej temperatury, nazywanej temperaturą krytyczną. Temperatura ta zależy od rodzaju (składu chemicznego i struktury) materiału, a także od czynników zewnętrznych - ciśnienia i pola magnetycznego. Drugim charakterystycznym dla nadprzewodników efektem jest wypychanie z materiału pola magnetycznego, zwane efektem Meissnera (w nadprzewodnikach pierwszego rodzaju), lub skupianie pola magnetycznego w „wiry” (w nadprzewodnikach drugiego rodzaju). Nadprzewodnictwo jest obserwowane w różnorodnych materiałach: niektórych pierwiastkach (na przykład w cynie, rtęci i ołowiu), stopach, ceramikach tlenkowych czy materiałach organicznych.",
+    "source": "<a href=\"https://pl.wikipedia.org/wiki/Nadprzewodnictwo\" target=\"_blank\">https://pl.wikipedia.org/wiki/Nadprzewodnictwo</a>"
+  }
+
+}

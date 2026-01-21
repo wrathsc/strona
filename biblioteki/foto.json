@@ -1,0 +1,82 @@
+{
+  "bursztyn": {
+    "src": "img/bursztyn.jpg",
+    "caption": "Bursztyn",
+    "source": "https://pl.wikipedia.org/wiki/Bursztyn"
+  },
+  "de_magnets": {
+    "src": "img/De_Magnete.jpg",
+    "caption": "Strona tytułowa dzieła De magnete",
+    "source": "https://en.wikipedia.org/wiki/De_Magnete"
+  },
+  "butelka_lejdejska": {
+    "src": "img/butelka_lejdejska.png",
+    "caption": "Butelka lejdejska",
+    "source": "https://pl.wikipedia.org/wiki/Butelka_lejdejska"
+  },
+  "franklin_latawiec": {
+    "src": "img/franklin_latawiec.jpg",
+    "caption": "Benjamin Franklin podczas eksperymentu z latawcem",
+    "source": "https://en.wikipedia.org/wiki/Benjamin_Franklin"
+  },
+  "waga_skrecen_coulomba": {
+    "src": "img/waga_skrecen_coulomba.jpg",
+    "caption": "Waga skręceń używana przez Coulomba",
+    "source": "https://pl.wikipedia.org/wiki/Prawo_Coulomba"
+  },
+  "maszyna_elektrostatyczna_18w": {
+    "src": "img/maszyna_elektrostatyczna_18w.jpg",
+    "caption": "Maszyna elektrostatyczna ze szklaną kulą używana w 18 wieku",
+    "source": "https://en.wikipedia.org/wiki/Electrostatic_generator"
+  },
+  "eksperyment_galvaniego": {
+    "src": "img/eksperyment_galvaniego.jpg",
+    "caption": "Eksperyment Galvaniego z żabimi nogami",
+    "source": "https://en.wikipedia.org/wiki/Luigi_Galvani"
+  },
+  "oerster": {
+    "src": "img/oerster.jpg",
+    "caption": "Hans Christian Ørsted podczas swojego eksperymentu",
+    "source": "https://wynalazki.edu.pl/index.php/wynalazcy/o/oersted"
+  },
+  "solenoid": {
+    "src": "img/solenoid.jpg",
+    "caption": "Solenoid",
+    "source": "http://physik.uibk.ac.at/museum/en/details/mag/indu1.html"
+  },
+  "pierscien_faradaya": {
+    "src": "img/pierscien_faradaya.png",
+    "caption": "Pierścień Faradaya",
+    "source": "https://www.researchgate.net/figure/Faradays-induction-ring-1831-Image-courtesy-of-the-Royal-Society-Science-and-Society_fig1_273324076"
+  },
+    "silnik_elektryczny": { 
+    "src":  "img/silnik_elektryczny.png",
+    "caption": "Prawdopodobnie pierwszy silnik elektryczny na świecie.",
+    "source": "https://commons.princeton.edu/josephhenry/electric-motor/"
+  },
+  "wahadlo_waltenhofena": {
+    "src": "img/wahadło_waltenhofena.jpg",
+    "caption": "Wahadło Waltenhofena",
+    "source": "http://physik.uibk.ac.at/museum/en/details/mag/waltenhofen.html"
+  },
+  "rezonator_hertza": {
+    "src": "img/rezonator_hertza.jpg",
+    "caption": "Rezonator i odbiornik Hertza",
+    "source": "https://www.sparkmuseum.org/portfolio-item/herzian-waveradiator-and-resonator/"
+  },
+  "generator_Tesli": {
+    "src": "img/generator_Tesli.jpg",
+    "caption": "Tesla siedzący obok swojego generatora",
+    "source": "https://pl.wikipedia.org/wiki/Nikola_Tesla"
+  },
+  "trioda": {
+    "src": "img/trioda.jpg",
+    "caption": "Trioda de Foresta 1908 roku",
+    "source": "https://en.wikipedia.org/wiki/Triode"
+  },
+  "poduszka_magnetyczna": {
+    "src": "img/poduszka_magnetyczna.jpg",
+    "caption": "Namagnesowany przedmiot lewituje nad nadprzewodnikiem schłodzonym poniżej temperatury przejścia (poduszka magnetyczna)",
+    "source": "https://pl.wikipedia.org/wiki/Nadprzewodnictwo"
+  }
+}
