@@ -141,6 +141,22 @@ figcaption {
     margin: 0 auto;
   }
 }
+@media (max-width: 900px) {
+  .foto-block {
+    float: none;
+    margin: 16px auto;
+    display: block;
+    max-width: 60%;
+  }
+
+  .foto-block img {
+    margin-bottom: 6px;
+  }
+
+  .figcaption {
+    text-align: center;
+  }
+}
 
 @media (max-width: 600px) {
     .historia-page h1 {
